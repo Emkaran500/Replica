@@ -46,14 +46,15 @@ body, h3, ul, a
 .div-content-body.top
 {
     padding: 32px 0px;
+    justify-content: space-between;
 }
 
 .div-content-body.first
 {
+    justify-content: flex-end;
     background-image: url("imgs/Layer_0_1.jpg");
     background-repeat: no-repeat;
     background-position: left;
-    padding-left: 570px;
     padding-top: 144px;
     padding-bottom: 144px;
     margin-bottom: 70px;
@@ -68,21 +69,18 @@ body, h3, ul, a
 .div-content-body.third
 {
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .div-content-body.fourth
 {
-    flex-direction: column;
-    background-image: url("imgs/Group_210.jpg");
-    background-repeat: no-repeat;
-    padding: 124px 0px 44px 0px;
     margin-bottom: 70px;
 }
 
 .div-content-body.footer
 {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 23px 0px;
 }
 
@@ -96,7 +94,6 @@ body, h3, ul, a
     background-repeat: no-repeat;
     background-position: left;
     text-decoration: none;
-    margin-right: 497px;
     font-size: 20px;
     color: #598D66;
 }
@@ -135,7 +132,7 @@ body, h3, ul, a
 {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    width: 540px;
 }
 
 .div-block-header
@@ -176,6 +173,7 @@ body, h3, ul, a
 .div-second-header
 {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
@@ -184,7 +182,6 @@ body, h3, ul, a
     font-size: 40px;
     line-height: 44px;
     color: #2C2D35;
-    margin-right: 427px;
 }
 
 .div-second-buttons
@@ -340,7 +337,13 @@ body, h3, ul, a
 .div-fourth-block
 {
     display: inline-block;
-    margin-left: 475px;
+    padding: 124px 0px 44px 0px;
+}
+
+.img-fourth-stub
+{
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .div-fourth-header
@@ -378,27 +381,22 @@ body, h3, ul, a
     margin-right: 0px;
 }
 
-.ul-footer-data
+.div-footer-data
 {
     display: flex;
     flex-direction: column;
-    list-style-type: none;
-    margin-right: 115px;
 }
 
 .a-logo.footer
 {
-    align-self: flex-start;
     margin-bottom: 35px;
-    margin-right: 0px;
 }
 
-.ul-footer-contacts
+.div-footer-contacts
 {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    list-style-type: none;
 }
 
 .div-footer-phone
@@ -423,7 +421,6 @@ body, h3, ul, a
     justify-content: space-between;
     width: 445px;
     list-style-type: none;
-    margin-right: 248px;
 }
 
 .ul-footer-block
@@ -451,10 +448,9 @@ body, h3, ul, a
     text-decoration: none;
 }
 
-.ul-footer-social
+.div-footer-social
 {
     align-self: flex-start;
-    list-style-type: none;
 }
 
 .ul-footer-social-buttons
@@ -488,17 +484,14 @@ body, h3, ul, a
     background-image: url("imgs/Frame_3.png");
 }
 
-.li-footer-license
-{
-    margin-bottom: 6px;
-}
-
-.li-footer-license:last-child
-{
-    margin-bottom: 0px;
-}
-
 .div-footer-license
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.div-footer-license-item
 {
     color: #86928B;
     font-size: 12px;
