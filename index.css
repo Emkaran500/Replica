@@ -88,7 +88,6 @@ body, h3, ul, a
 {
     display: flex;
     font-family: 'Raleway-Bold', sans-serif;
-    align-self: center;
     padding: 6px 0px 6px 41px;
     background-image: url("imgs/Star_1.png");
     background-repeat: no-repeat;
